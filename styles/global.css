@@ -8,7 +8,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1em;
   line-height: 1.5;
-  text-align: center;
+  
 }
 
 img{
@@ -43,14 +43,12 @@ h1, h2, p {
   padding: 1em 0;
 }
 .btn {
-  appearance: none;
-  background: none;
+  background-color: #000000;
+  color: #ffffff;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 10px 20px;
-  border-radius: 8px;
-  color:#212121;
   font-size: 16px;
   font-weight: 600;
   margin: 0 15px;
@@ -60,8 +58,7 @@ h1, h2, p {
 
 .btn1 {
   color: #FE4880;
-  border: 3px solid #FE4880;
-  background-image: linear-gradient(to right, transparent 50%, #FE4880fieldset {
+  background-image: linear-gradient(to right, transparent 50%, #FE4880 
   border: none;
   padding: 2rem 0;
   border-bottom: 3px solid #3b3b4f;
@@ -79,8 +76,8 @@ h1, h2, p {
 .header{
   min-height: 450px;
   text-align: center;
-  color: #fff;
- 
+  color: #000000;
+  
 }
 
 .logo{
@@ -102,6 +99,10 @@ h1, h2, p {
 
 .content-wrap,  .content-wrap{
   padding: 0 1.5em;
+  
+}
+.content-text{
+  width: 100%;
 }
 /*Seciton A*/
 
@@ -142,6 +143,54 @@ h1, h2, p {
 }
 
 
+/*section D*/
+.section-d{
+  padding: 2em 1em 1em;
+  background-color: #FE4880;
+}
+
+.submission-form{
+  width: 390x;
+  margin: 2rem auto;
+  border:2px solid #000000;
+  padding:2rem;
+}
+
+fieldset{
+border:none;
+}
+  label{
+    display: block;
+    padding:1rem 0 .25rem;
+    text-transform: uppercase;
+    font-size:14px
+  }
+
+
+  input,
+textarea,
+select {
+  display: block;
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+  .bt{
+    border:0;
+    background:#000000;
+    color: #FFFFFF;
+    padding: .5rem;
+    margin:1rem 0;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .bt:hover{
+      background: #cccccc;
+  }
+
+
 /*section C*/
 /* Media Querries */
 
@@ -153,36 +202,21 @@ h1, h2, p {
   .content-wrap, .section-b ul{
     grid-column: 2/4;
   }
-  .section-c {
-    gap: 20px;
-  }
+ 
   
   .section-b ul{
     flex-direction: row;
     
   }
-}
+  .section-c {
+    gap: 20px;
+  }
+  .section-d{
+    flex-direction: row;
+  }
 
-/*section D*/
-.section-d{
-  padding: 2em 1em 1em;
-  background-color: #FE4880;
-}
-
-fieldset {
-  border: none;
-  padding: 2rem 0;
-  
-}
-
-label {
-  display: block;
-  margin: 0.5rem 0;
-}
-
-input,
-textarea,
-select {
-  margin: 10px 10px 10px 10px;
-  width: 100%;
+  .submission-form{
+    width: 700px;
+    
+  }
 }

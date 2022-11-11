@@ -31,10 +31,12 @@
   <!--Main Area-->  
   <main id="main">
     <!--Section A-->  
-    <section class="section-a grid">
+    <section class="section-a ">
       <div class="content-wrap">
         <h2 class="content-title">Title</h2>
+        <div class="content-text">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sit neque eius quae dolorem quis odit? Architecto at consequuntur, odit eaque numquam blanditiis nostrum maiores consequatur, dolorem ut nihil quae, libero molestiae vero pariatur vitae sit molestias! Expedita, magnam totam?</p>
+      </div>
       </div>
     </section>
     
@@ -103,22 +105,24 @@
 
           </div>
           <section class="section-d grid">
-          <form action='#'>
-            <fieldset>
-              <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
-              <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-              <label for="email">E-mail: <input id="email" name="email" type="email" required /></label>
-              <label for="address">Address: <input id="address" name="address" type="textarea" required /></label>
-              <label for="gender">Gender
-                <select id="gender" name="gender">
-                  <option value="">(select one)</option>
-                  <option value="1">Male</option>
-                  <option value="2">Female</option>
-                </select>
-              </label>
-            </fieldset>
-            <input type="submit" value="Submit" />
-    </form>
+                  <form action='#' method="post" class="submission-form">
+                    <legend>Subscribe</legend>
+                    <fieldset>
+                      <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                      <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                      <label for="email">E-mail: <input id="email" name="email" type="email" required /></label>
+                      <label for="address">Address: <input id="address" name="address" type="textarea" required /></label>
+                      <label for="gender">Gender
+                      <select id="gender" name="gender">
+                        <option value="">(select one)</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                      </label>
+                    </fieldset>
+                    <input type="submit" value="Submit" class="bt" />
+                  </form>
+              
           </section>
   </main>	
   </body>
